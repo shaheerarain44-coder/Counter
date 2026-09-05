@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,  gray,rgb(186, 141, 141) );
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Container{
+    background:linear-gradient(to left,  gray,rgb(186, 141, 141) ); 
+    border: 1px solid rgb(209, 146, 146);
+    padding: 2rem;
+    min-height: 45vh;
+    min-width: 18vw;
+    border-radius: 2rem;
+
+}
+h1{
+    color: bisque;
+    font-weight: bold;
+    text-align: center;
+    cursor:default;
+
+}
+.count{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 50px;
+    color: beige;
+     cursor:default;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.mins{
+    background-color: red;
+   font-weight: bold;
+   padding: 0 1rem;
+   border-radius: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+   & h1{
+ color: rgb(245, 217, 217);
+   }
+}
+
+
+.reset{
+      background-color: rgb(196, 124, 124);
+      display: flex;
+      align-items: center;
+   font-weight: bold;
+   padding: 0 1rem;
+   border-radius: 0.5rem;
+   line-height: 1rem;
+   cursor: pointer;
+     user-select: none;
+}
+.plus{
+    background-color: green;
+   font-weight: bold;
+   padding: 0 1rem;
+   border-radius: 0.5rem;
+    cursor: pointer;
+     user-select: none;
+   & h1{
+ color: rgb(212, 194, 194);
+ background-color: green;
+   }
+}
+.mins .reset .plus{
+    transition: all 0.3s smooth;
+}
+.plus:hover{
+    transform: translatey(-4px);
+}
+.mins:hover{
+    transform: translatey(-4px);
+}
