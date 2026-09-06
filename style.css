@@ -17,7 +17,7 @@ body{
     padding: 2rem;
     min-height: 45vh;
     min-width: 18vw;
-    border-radius: 2rem;
+      border-radius: 1rem 4rem 1rem 4rem;
 
 }
 h1{
@@ -43,7 +43,7 @@ h1{
     background-color: red;
    font-weight: bold;
    padding: 0 1rem;
-   border-radius: 0.5rem;
+    border-radius: 0.5rem 1rem 2rem 0;
     cursor: pointer;
     user-select: none;
    & h1{
@@ -53,12 +53,13 @@ h1{
 
 
 .reset{
-      background-color: rgb(196, 124, 124);
+      background-color: rgb(181, 161, 161);
+      color: rgb(80, 67, 67);
       display: flex;
       align-items: center;
    font-weight: bold;
    padding: 0 1rem;
-   border-radius: 0.5rem;
+   border-radius: 1rem 1rem 2rem 2rem;
    line-height: 1rem;
    cursor: pointer;
      user-select: none;
@@ -67,7 +68,7 @@ h1{
     background-color: green;
    font-weight: bold;
    padding: 0 1rem;
-   border-radius: 0.5rem;
+     border-radius: 0.5rem 1rem 0 2rem;
     cursor: pointer;
      user-select: none;
    & h1{
@@ -80,6 +81,7 @@ h1{
 }
 .plus:hover{
     transform: translatey(-4px);
+   
 }
 .mins:hover{
     transform: translatey(-4px);
